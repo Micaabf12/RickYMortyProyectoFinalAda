@@ -1,0 +1,126 @@
+body {
+    font-family: 'rem', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.pexels.com/photos/1287142/pexels-photo-1287142.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-1287142.jpg&fm=jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header, footer {
+    background: linear-gradient(
+      hsla(300, 78%, 32%, 0.5),
+      hsla(300, 96%, 29%, 0.5)
+  );
+    color: tomato;
+    text-align: left;
+    padding: 10px;
+  }
+  header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Valores: desplazamiento en X, desplazamiento en Y, tamaño de la sombra, color de la sombra */
+  }
+  h1 {
+    margin: 0;
+  }
+  
+  .main {
+    padding: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  .filters label,
+  .filters select {
+    margin-right: 10px;
+  }
+  
+  .characterList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .characterList img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  h3 {
+    color: red;
+  }
+  
+  p {
+    color: black;
+  }
+  
+  .characterCard {
+    border: 1px solid #55058a;
+    padding: 15px;
+    box-shadow: 0 0 .5rem #999999da;
+  }
+  .characterCard:hover{
+    transform: 
+        scale(1.1);
+    
+  }
+  
+  .characterDetail {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+  }
+  
+  .pagination button,
+  .pagination span {
+    margin: 0 5px;
+    
+    
+  }
+  .pagination button{
+    background-color: rgb(11, 161, 48);
+    border-radius: 5px;
+    border-color: black;
+    padding: 5px;
+  }
+  .pagination button:hover{
+    box-shadow: 0 0 .5rem #999;
+    transform: 
+        scale(1.1);
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  footer p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.781);
+  }
+  @media (max-width: 768px) {
+    .pagination {
+      flex-direction: column;
+      align-items: center;
+    }
+    .pagination button{
+      margin: 5px;
+      padding: 5px;
+    }
+    .pagination button:hover{
+      box-shadow: 0 0 .5rem #999;
+      transform: 
+          scale(1.1);
+    }
+  }
